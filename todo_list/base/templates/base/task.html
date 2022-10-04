@@ -1,0 +1,7 @@
+{% extends 'main/main.html' %}
+{% block content %}
+
+<h1>My Task: {{task|safe}}</h1>
+<a href="{% url 'tasks-lists' %}">Back to Task List</a>
+
+{% endblock content %}
